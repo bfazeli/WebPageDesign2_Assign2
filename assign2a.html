@@ -14,9 +14,20 @@
 		ol ol ol {
 			list-style-type: lower-roman;
 		}
+		div:nth-of-type(2) ol {
+			list-style-image: url(star.png);
+		}
+		div:nth-of-type(2) ol ol {
+			list-style-image: url(redL.png);
+		}
+		div:nth-of-type(2) ol ol ol {
+			list-style-image: url(blueL.png);
+		}
 	</style>
 </head>
 <body>
+	<!--Non-graphical list-->
+	<span>Non-graphical list</span>
 	<div>
 		<ol>
 			<li>CSS
@@ -39,6 +50,36 @@
 						</ol>
 					<li>Inline</li>
 				</ol>
+			</li>
+		</ol>
+	</div>
+	<!--Graphical list-->
+	<br>
+	<span>Graphical list</span>
+	<div>
+		<ol>
+			<li>Fall
+				<ol>
+					<li>English</li>
+					<li>Computers</li>
+						<ol>
+							<li>CIS 100</li>
+							<li>CIS 111</li>
+						</ol>
+					<li>Math</li>
+				</ol>
+			</li>
+			<li>Spring
+				<ol>
+					<li>History</li>
+						<ol>
+							<li>HIS 100</li>
+							<li>HIS 110</li>
+						</ol>
+					<li>Communications</li>
+				</ol>
+			</li>
+			<li>Summer
 			</li>
 		</ol>
 	</div>
