@@ -3,8 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		ol {
+			text-indent: 5px;
+			list-style-type: upper-roman;
+		}
+		ol ol {
+			list-style-type: upper-alpha;
+		}
+		ol ol ol {
+			list-style-type: lower-roman;
+		}
+	</style>
 </head>
 <body>
-	
+	<div>
+		<ol>
+			<li>CSS
+				<ol>
+					<li>Inline</li>
+					<li>Embedded</li>
+						<ol>
+							<li>Classes</li>
+							<li>ID's</li>
+						</ol>
+					<li>External</li>
+				</ol>
+			</li>
+			<li>JavaScript
+				<ol>
+					<li>Functions</li>
+						<ol>
+							<li>Creating</li>
+							<li>Calling</li>
+						</ol>
+					<li>Inline</li>
+				</ol>
+			</li>
+		</ol>
+	</div>
 </body>
 </html>
